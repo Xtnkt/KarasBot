@@ -43,10 +43,10 @@ const start = () => {
         if (data === '/again') {
             return startGame(chatId)
         }
-        if (data === chats[chatId]) {
-            return bot.sendMessage(chatId, `Поздравляю,угадал! Цифра ${chats[chatId]}`, againOptions)
+        if (data == chats[chatId]) {
+            return  bot.sendMessage(chatId, `Поздравляю,угадал! Цифра ${chats[chatId]}`, againOptions)
         } else {
-            return bot.sendMessage(chatId, `Не угадал, Я загадал ${chats[chatId]}.`, againOptions)
+            return  bot.sendMessage(chatId, `Не угадал, Я загадал ${chats[chatId]}.`, againOptions)
         }
 
     })
